@@ -21,7 +21,23 @@
 // P3
 // const = constant value, it means you cant change it via script, basicly tells compiler that variable is READ-ONLY
 
+// P4
+// typedef = its like new identifier(nickname) for existing type(int, bool, char, double, string)
+// typedef int age_t; = creates shortcut for age, like it creates new name for int
+// age_t age = 16; = we create variable age which is int
+// in simple typedef adds "nickname" for variable type
+
+// P5
+// +=(Add(++)), -=(Minus(--)), *=(Multiply), /=(Divide), %=(Modulus Divide)
+// Steps: 1) parenthesis, 2) multiplication/devision, 3) addition, subtraction
+
+// P6
+// Implicit = automatic
+// Explitic = precade value with new datatype (datatype)
+// varType varName = (newDatatype) value
+
 #include <iostream>
+#include <vector>
 
 /*namespace first {
   int x = 1;
@@ -30,6 +46,23 @@
 namespace second {
   int x = 2;
 }*/
+
+// namespace player1 {
+//   int level = 1;
+//   double health = 98.2;
+// }
+// namespace player2 {
+//   int level = 2;
+//   double health = 89.9;
+// }
+
+// typedef std::vector<std::pair<std::string, int>> pairlist_t;
+// typedef std::string text_t;
+// typedef int age_t;
+// using text_t = std::string; // alternative way, better way, better with templates
+// using age_t = int;
+
+
 
 int main() {
   /*std::cout << "Hello, World!" << '\n';
@@ -86,7 +119,7 @@ int main() {
 
   std::cout << circumference << "CM" << '\n'; */
 
-  /*using namespace first;
+  /*using namespace first; // "Imports" namespace from first
   std::cout << second::x << '\n';
 
   using std::cout;
@@ -96,6 +129,40 @@ int main() {
 
   cout << "Hello" << name << '\n'; //std::cout*/
 
+  // using namespace player1;
+  // std::cout << "Level: " << level << ", " << "Health: " << player2::health << '\n';
+  // std::cout << "Level: " << level << ", " << "Health: " << player2::health << '\n'; // For Player2 we use player2::variable
+  // using std::cout;
+  // using std::string;
+  // string name = "Andria";
+  // cout << "Hello " << name << '\n';
+
+  // pairlist_t pairlist;
+  // text_t firstName = "Lezhava";
+  // age_t age = 16;
+  // std::cout << age << '\n';
+
+  // int students = 20; // use double
+  // int remainder = students % 3;
+  // students += 2;
+  // students -= 2;
+  // students ++;
+  // students --;
+  // students *= 2;
+  // students /= 2;
+  // students %= 2;
+  // std::cout << remainder << '\n';
+
+  // double x = (int) 3.14;
+  // std::cout << x;
+
+  // char x = 100;
+  // std::cout << x;
+  // std::cout << (char) 100;
+  // int correct = 8;
+  // int questions = 10;
+  // double score = correct / (double) questions * 100;
+  // std::cout << score << "%";
 
   return 0;
 }
