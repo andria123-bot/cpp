@@ -9,7 +9,7 @@
 // endl -- end line
 // return 0 -- program will return 0 IF it was success(0) else fail(1)
 // :: -- scope resolution operator 
-/* MultiLine Comment */
+// /* MultiLine Comment */
 
 // P2
 // int = number
@@ -36,8 +36,15 @@
 // Explitic = precade value with new datatype (datatype)
 // varType varName = (newDatatype) value
 
+// P7
+// cin = character input, we can input data using cin
+// std::getline(std::cin >> std::ws, name); = getline will let us input spaces, first argument is our method that we want to use and second is variable taht we want to store
+// getline() function allows us to let user input any whitespace(space)
+// std::ws means it will eliminate whitespace or newline
+
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 /*namespace first {
   int x = 1;
@@ -61,8 +68,6 @@ namespace second {
 // typedef int age_t;
 // using text_t = std::string; // alternative way, better way, better with templates
 // using age_t = int;
-
-
 
 int main() {
   /*std::cout << "Hello, World!" << '\n';
@@ -163,6 +168,148 @@ int main() {
   // int questions = 10;
   // double score = correct / (double) questions * 100;
   // std::cout << score << "%";
+
+  // int zero = 0;
+  // int y = 2 / zero; // valid ragebait ;=;
+
+  // std::string name;
+  // int age;
+  // std::cout << "Whats Ur Age?: ";
+  // std::cin >> age;
+  // std::cout << "Whats Ur Full Name?: ";
+  // std::getline(std::cin >> std::ws, name);
+  // std::cout << "Name: " << name << '\n';
+  // std::cout << "Age: " << age << '\n';
+
+  // double x = 3.941;
+  // double y = 4;
+  // double z;
+  // z = std::max(x, y); // all of this requires cmath library
+  // z = std::min(x, y);
+  // z = pow(2, 3);
+  // z = sqrt(9);
+  // z = abs(-4);
+  // z = round(x);
+  // z = ceil(x);
+  // z = floor(x);
+  // std::cout << z << '\n';
+
+  // double a;
+  // double b;
+  // double c;
+  // std::cout << "Enter Side A: " << '\n';
+  // std::cin >> a;
+  // std::cout << "Enter Side B: " << '\n';
+  // std::cin >> b;
+  // c = sqrt(pow(a, 2) + pow(b, 2));
+  // std::cout << "Side C: " << c << '\n';
+
+  // int age;
+  // std::cout << "Enter Your Age: ";
+  // std::cin >> age;
+  // if(age >= 100) { // from hightest to lowest
+  //   std::cout << "You Are Too Old For This Site!";
+  // } else if (age >= 18) {
+  //   std::cout << "You Are Allowed On My Site!";
+  // }else if (age < 0) {
+  //   std::cout << "Enter Valid Age!";
+  // } else {
+  //   std::cout << "You Are NOT Allowed On My Site!";
+  // }
+
+  // int month;
+  // std::cout << "Enter Month (1-12): ";
+  // std::cin >> month;
+  // switch (month) {
+  //     case 1:
+  //       std::cout << "It is January";
+  //       break;
+  //     case 2:
+  //       std::cout << "It is February";
+  //       break;
+  //     case 3:
+  //       std::cout << "It is March";
+  //       break;
+  //     case 4:
+  //       std::cout << "It is April";
+  //       break;
+  //     case 5:
+  //       std::cout << "It is May";
+  //       break;
+  //     case 6:
+  //       std::cout << "It is June";
+  //       break;
+  //     case 7:
+  //       std::cout << "It is July";
+  //       break;
+  //     case 8:
+  //       std::cout << "It is August";
+  //       break;
+  //     case 9:
+  //       std::cout << "It is September";
+  //       break;
+  //     case 10:
+  //       std::cout << "It is October";
+  //       break;
+  //     case 11:
+  //       std::cout << "It is November";
+  //       break;
+  //     case 12:
+  //       std::cout << "It is December";
+  //       break;
+  //     default:
+  //       std::cout << "Invalid month. Please enter a number from 1 to 12.";
+  //       break;
+  //     }
+
+  // char grade;
+  // std::cout << "What Letter Grade?: ";
+  // std::cin >> grade;
+  // switch (grade) {
+  // case 'A':
+  //   std::cout << "You Did Great!";
+  //   break;
+  // case 'B':
+  //   std::cout << "You Did Good!";
+  //   break;
+  // case 'C':
+  //   std::cout << "You Did Ok!";
+  //   break;
+  // case 'D':
+  //   std::cout << "You Did Not Do Good!";
+  //   break;
+  // case 'F':
+  //   std::cout << "You Failed!";
+  //   break;
+  // default:
+  //   std::cout << "Enter Valid Grade!";
+  // }
+
+  // char op;
+  // double num1;
+  // double num2;
+  // double res;
+  // std::cout << "***** CALCULATOR *****\n";
+  // std::cout << "Enter Operator (+ - * /): ";
+  // std::cin >> op;
+  // std::cout << "Enter First Number: ";
+  // std::cin >> num1;
+  // std::cout << "Enter Second Number: ";
+  // std::cin >> num2;
+  // if (op == '+') {
+  //   res = num1 + num2;
+  // } else if (op == '-') {
+  //   res = num1 - num2;
+  // } else if (op == '*') {
+  //   res = num1 * num2;
+  // } else if (op == '/') {
+  //   res = num1 / num2;
+  // } else {
+  //   std::cout << "Enter Valid Operator!";
+  // }
+  // std::cout << "Result: " << res << '\n';
+  // std::cout << "**********************";
+
 
   return 0;
 }
