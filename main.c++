@@ -310,6 +310,5 @@ int main() {
   // std::cout << "Result: " << res << '\n';
   // std::cout << "**********************";
 
-
   return 0;
 }
